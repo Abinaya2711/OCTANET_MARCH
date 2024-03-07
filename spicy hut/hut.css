@@ -1,0 +1,260 @@
+:root {
+    --red: crimson;
+    --green: #53BF9D;
+    --yellow: #FFC54D;
+    --white: whitesmoke;
+}
+
+body,
+h2 {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.landing {
+    background-image: url('pexels-cats-coming-1907227.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: var(--white);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--yellow);
+    min-width: 120px;
+}
+
+header {
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+}
+
+#logo {
+    flex: 3;
+    font-size: 30px;
+    min-width: 260px;
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    flex: 1
+}
+
+nav a:hover {
+    color: var(--green);
+}
+
+header h2,
+nav a i {
+    margin-right: 10px;
+}
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: center;
+    padding: 30px;
+}
+
+.tagline1 {
+    color: var(--red);
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.tagline2 {
+    color: var(--white);
+    font-size: 30px;
+}
+
+.tagline3 {
+    font-size: 20px;
+}
+
+.maintext div {
+    margin: 20px 20px;
+}
+
+.maintext button {
+    width: 15%;
+    border-radius: 10px;
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border: 1px solid var(--red);
+
+}
+
+.menu {
+    display: grid;
+    background: linear-gradient(to right, rgb(1, 1, 1), rgb(0, 0, 0));
+    color: var(--white);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+#menuheading,
+#locheading {
+    font-size: 35px;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(1, 1, 1), rgb(0, 0, 0));
+    ;
+}
+
+.menu th {
+    color: var(--green);
+    font-size: 25px;
+}
+
+table {
+    width: 100%;
+    padding: 20px;
+}
+
+.menu tr {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+.menu td:nth-child(1) {
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2) {
+    justify-self: right;
+}
+
+.maincourse {
+    grid-row: span 2;
+}
+
+.heading{
+    text-align: center;
+    font-size:3rem;
+    color:var(--red);
+    padding:1rem;
+    margin:2rem 0;
+}
+.contact{
+    background-color: black;
+}
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact .row form {
+    flex: 1;
+    padding: 2rem 3.5rem;
+    background:black;
+    border-radius: .5rem;
+    width:300px;
+    margin:50px;
+    font-size: 20px;
+}
+
+.contact .row .image {
+    flex: 1;
+}
+
+.contact .row .image img {
+    width:450px;
+    height: 450px;
+    margin-right:80px;
+
+}
+
+.contact .row form .box {
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: 0.2rem solid rgba(255, 255, 255, 0.1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%
+}
+
+.contact .row form .box:focus {
+    border-color: var(--pink);
+}
+
+.contact .row form textarea {
+    height: 10rem;
+    resize: none;
+}
+.contact .row input,textarea{
+    background-color: black;
+}
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color:var(--red);
+    border-color:var(--red);
+    border-style:solid;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 1.7rem;
+
+}
+.locations {
+    background: linear-gradient(to right, rgb(1, 1, 1), rgb(0, 0, 0));
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations h2 {
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.locations div {
+    flex: 1;
+    padding: 20px;
+    min-width: 220px
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: var(--white);
+    padding: 10px;
+}
+.fa-linkedin{
+    font-size:30px;
+    color:rgb(55, 55, 201);
+    margin:10px;
+}
+.fa-square-whatsapp{
+    font-size:30px;
+    color:rgb(14, 244, 98);
+    margin:10px;
+}
+.fa-square-twitter{
+    font-size:30px;
+    color:skyblue;
+    margin:10px; 
+}
